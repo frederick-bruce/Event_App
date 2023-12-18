@@ -13,15 +13,13 @@ export const headerLinks = [
   },
 ];
 
-export const eventDefaultValues = {
+export const recipeDefaultValues = {
   title: "",
   description: "",
-  location: "",
   imageUrl: "",
-  startDateTime: new Date(),
-  endDateTime: new Date(),
+  prepTime: "",
+  totalTime: "",
+  allergy: "",
   categoryId: "",
-  price: "",
-  isFree: false,
   url: "",
 };

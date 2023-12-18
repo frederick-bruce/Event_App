@@ -7,7 +7,7 @@ export interface IEvent extends Document {
   ingredients?: string;
   prepTime?: string;
   totalTime?: string;
-  allergies?: boolean;
+  allergy?: string;
   createdAt?: Date;
   imageUrl: string;
   url?: string;
@@ -21,7 +21,7 @@ const RecipeSchema = new Schema({
   ingredients: { type: String },
   prepTime: { type: String },
   totalTime: { type: String },
-  allergies: { type: Boolean },
+  allergy: { type: String },
   createdAt: { type: Date, default: Date.now() },
   imageUrl: { type: String, required: true },
   url: { type: String },

@@ -24,7 +24,7 @@ export type CreateRecipeParams = {
     ingredients: string;
     prepTime: string;
     totalTime: string;
-    allergies: Boolean;
+    allergy: string;
     imageUrl: string;
     createdAt: Date;
     categoryId: string;
@@ -44,7 +44,7 @@ export type UpdateRecipeParams = {
     ingredients: string;
     prepTime: string;
     totalTime: string;
-    allergies: Boolean;
+    allergy: string;
     categoryId: string;
     url: string;
   };
@@ -82,7 +82,7 @@ export type Recipe = {
   description: string;
   prepTime: string;
   totalTime: string;
-  allergies: boolean;
+  allergy: string;
   imageUrl: string;
   url: string;
   author: {

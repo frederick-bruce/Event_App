@@ -4,8 +4,8 @@ export const headerLinks = [
     route: "/",
   },
   {
-    label: "Create Recipe",
-    route: "/recipes/create",
+    label: "Create Event",
+    route: "/events/create",
   },
   {
     label: "My Profile",
@@ -13,13 +13,15 @@ export const headerLinks = [
   },
 ];
 
-export const recipeDefaultValues = {
+export const eventDefaultValues = {
   title: "",
   description: "",
+  location: "",
   imageUrl: "",
-  prepTime: "",
-  totalTime: "",
-  allergy: "",
+  startDateTime: new Date(),
+  endDateTime: new Date(),
   categoryId: "",
+  price: "",
+  isFree: false,
   url: "",
 };

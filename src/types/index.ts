@@ -15,77 +15,79 @@ export type UpdateUserParams = {
   photo: string;
 };
 
-// ====== Recipe PARAMS
-export type CreateRecipeParams = {
+// ====== EVENT PARAMS
+export type CreateEventParams = {
   userId: string;
-  recipe: {
+  event: {
     title: string;
     description: string;
-    ingredients: string;
-    prepTime: string;
-    totalTime: string;
-    allergy: string;
+    location: string;
     imageUrl: string;
-    createdAt: Date;
+    startDateTime: Date;
+    endDateTime: Date;
     categoryId: string;
+    price: string;
+    isFree: boolean;
     url: string;
-    author: string;
   };
   path: string;
 };
 
-export type UpdateRecipeParams = {
+export type UpdateEventParams = {
   userId: string;
   event: {
     _id: string;
     title: string;
     imageUrl: string;
     description: string;
-    ingredients: string;
-    prepTime: string;
-    totalTime: string;
-    allergy: string;
+    location: string;
+    startDateTime: Date;
+    endDateTime: Date;
     categoryId: string;
+    price: string;
+    isFree: boolean;
     url: string;
   };
   path: string;
 };
 
-export type DeleteRecipeParams = {
+export type DeleteEventParams = {
   eventId: string;
   path: string;
 };
 
-export type GetAllRecipesParams = {
+export type GetAllEventsParams = {
   query: string;
   category: string;
   limit: number;
   page: number;
 };
 
-export type GetRecipesByUserParams = {
+export type GetEventsByUserParams = {
   userId: string;
   limit?: number;
   page: number;
 };
 
-export type GetRelatedRecipesByCategoryParams = {
+export type GetRelatedEventsByCategoryParams = {
   categoryId: string;
   eventId: string;
   limit?: number;
   page: number | string;
 };
 
-export type Recipe = {
+export type Event = {
   _id: string;
   title: string;
   description: string;
-  prepTime: string;
-  totalTime: string;
-  allergy: string;
+  price: string;
+  isFree: boolean;
   imageUrl: string;
+  location: string;
+  startDateTime: Date;
+  endDateTime: Date;
   url: string;
-  author: {
+  organizer: {
     _id: string;
     firstName: string;
     lastName: string;
@@ -103,8 +105,8 @@ export type CreateCategoryParams = {
 
 // ====== ORDER PARAMS
 export type CheckoutOrderParams = {
-  recipeTitle: string;
-  recipeId: string;
+  eventTitle: string;
+  eventId: string;
   price: string;
   isFree: boolean;
   buyerId: string;
@@ -118,7 +120,7 @@ export type CreateOrderParams = {
   createdAt: Date;
 };
 
-export type GetOrdersByRecipeParams = {
+export type GetOrdersByEventParams = {
   eventId: string;
   searchString: string;
 };

@@ -1,26 +1,22 @@
-import RecipeForm from "@/components/shared/RecipeForm";
+import EventForm from "@/components/shared/EventForm";
 import { auth } from "@clerk/nextjs";
+import React from "react";
 
-
-
-export default function UpdateRecipe() {
-
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-  }
-  
+export default function CreateRecipe() {
   const { sessionClaims } = auth();
+
   const userId = sessionClaims?.userId as string;
+
+  console.log(userId)
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <h3 className="wrapper h3-bold text-center sm:text-left">
-          Update Recipe{" "}
+          Create Event{" "}
         </h3>
       </section>
       <div className="wrapper my-8">
-        <RecipeForm userId={userId} type="Update" />
+        <EventForm userId={userId} type="Create" />
       </div>
     </>
   );

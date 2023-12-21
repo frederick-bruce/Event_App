@@ -1,7 +1,7 @@
 <div align="center">
   <br/>
-  <img src="[https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png](https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png)" alt="project banner">
-
+  <img src="https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png" alt="project banner">
+<br/
 
   <div>
     <img src="https://img.shields.io/badge/-Next_JS_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />

@@ -1,6 +1,6 @@
 <div align="center">
   <br/>
-  <img src="https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png alt="project banner"/>
+  <img s[rc="https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png](https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png) alt="project banner"/>
 
 
   <div>

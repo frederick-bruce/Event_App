@@ -1,4 +1,6 @@
 <div align="center">
+  <br/>
+  <img src="https://github.com/frederick-bruce/Event_App/blob/main/public/assets/images/projectImg.png alt="project banner"/>
 
 
   <div>

@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Cookly",
-  description: "Cookly is a platform for recipe management.",
+  description: "Evently is a platform for event management.",
   icons: {
     icon: "/assets/images/logo.svg",
   },
